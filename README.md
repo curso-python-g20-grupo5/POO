@@ -25,3 +25,11 @@ Se solicita implementar la API de una aplicación de campañas publicitarias. Ca
 - **Composición**: las campañas deben contener múltiples anuncios, y el método ```__obtener_instancia_anuncio``` se encarga de crear los objetos correctos basados en los datos proporcionados.
 - **Sobrecarga de métodos**: implementar métodos como ```__str__``` para mostrar los detalles de la campaña y sus anuncios de manera clara.
 
+## Autores y Autoras
+
+- [Rosa Rubio](https://github.com/PaulinaRubioP)
+- [Valery Maragaño](https://github.com/Valyxp)
+- [Marco Alvarado](https://github.com/7pixel-cl)
+- [Esteban Hernández](https://github.com/stivhc)
+
+⌨️ con ❤️ por el Grupo 5 - G20 😊
