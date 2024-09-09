@@ -1,7 +1,7 @@
 from campania import Campania
 from datetime import date
 from anuncio import Video
-from error import SubTipoInvalidoError, LargoExcedidoError
+from POO.error import SubTipoInvalidoError, LargoExcedidoError
 
 # Crear una instancia de Campania con un solo anuncio de tipo Video
 anuncios = [
