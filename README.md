@@ -10,12 +10,15 @@ La POO es un paradigma que organiza el software en "objetos" que contienen tanto
   
 ## 2. Explicación detallada de los archivos
 a) ```anuncio.py```: este archivo contiene la clase base ```Anuncio``` y sus subclases ```Video```, ```Display```, y ```Social```. Aquí se hace uso del principio de **herencia** para evitar duplicación de código. Cada subclase representa un tipo específico de anuncio, pero todas comparten atributos comunes como `ancho` y `alto` que son definidos en ```Anuncio```.
-_**Métodos abstractos**: `Anuncio` define algunos métodos abstractos que las subclases deben implementar, como```comprimir_anuncio```. Este es un ejemplo de cómo la **abstracción** simplifica el diseño, permitiendo que las subclases solo implementen los detalles específicos.
-_**Getters y Setters**: son esenciales para encapsular los datos, asegurando que se validen correctamente antes de modificar atributos. Esto se puede ver en la validación del tamaño del anuncio.
+- **Métodos abstractos**: `Anuncio` define algunos métodos abstractos que las subclases deben implementar, como```comprimir_anuncio```. Este es un ejemplo de cómo la **abstracción** simplifica el diseño, permitiendo que las subclases solo implementen los detalles específicos.
+- **Getters y Setters**: son esenciales para encapsular los datos, asegurando que se validen correctamente antes de modificar atributos. Esto se puede ver en la validación del tamaño del anuncio.
+  
 b) ```campania.py```: esta clase representa una campaña que contiene una colección de anuncios. Al usar **composición**, la clase ```Campania``` contiene anuncios dentro de ella, pero no hereda de ```Anuncio```. La clase utiliza encapsulamiento para validar los nombres de las campañas y asegurarse de que no excedan los 250 caracteres.
 - **Composición**: los anuncios dentro de `Campania` son instancias de diferentes clases (`Video`, `Display`, `Social`). Esto muestra cómo los objetos pueden estar formados por otros objetos, permitiendo una estructura flexible.
 - **Excepciones**: si el nombre de la campaña es muy largo, se lanza una excepción personalizada ```LargoExcedidoError```. Este es un ejemplo de cómo manejar errores específicos de negocio dentro del código.
+  
 c) ```error.py```: este archivo define excepciones personalizadas que manejan errores específicos del negocio, como ```LargoExcedidoError``` o ```SubTipoInvalidoError```. Definir excepciones específicas hace que sea más fácil depurar y manejar errores en tiempo de ejecución.
+
 d) ```demo.py```: este archivo es un ejemplo de cómo interactuar con las clases ```Campania``` y ```Anuncio```. Usa ```try/except``` para capturar y manejar excepciones. Si ocurre un error, como un nombre de campaña inválido o un subtipo incorrecto, el programa lo captura y registra en ```error.log```, en lugar de detenerse.
 
 ## 3. Detalles adicionales de la prueba de Programación Avanzada
